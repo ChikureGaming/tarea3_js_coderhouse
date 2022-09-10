@@ -19,12 +19,25 @@ const inventario = [
 
 function orden(){
     let p1 = parseInt(prompt("Cuantos sobres de Pokemon TCG quieres"));
-    let p2 = parseInt(prompt("Cuantos sobres de Yugioh TCG quieres"));
-    let p3 = parseInt(prompt("Cuantos sobres de Digimon TCG quieres"));
-    let p4 = parseInt(prompt("Cuantos sobres de Final Fantasy TCG quieres"));
-    let p5 = parseInt(prompt("Cuantos sobres de Weiss TCG quieres"));
-    let p6 = parseInt(prompt("Cuantos sobres de One Piece TCG quieres"));
+    while (isNaN(p1 = prompt("Favor de ingresar solamente dígitos. Cuántos sobres de Pokemon TCG quieres")));
     
+    let p2 = parseInt(prompt("Cuantos sobres de Yugioh TCG quieres"));
+    while (isNaN(p2 = prompt("Favor de ingresar solamente dígitos. Cuántos sobres de Yugioh TCG quieres")));
+
+    let p3 = parseInt(prompt("Cuantos sobres de Digimon TCG quieres"));
+    while (isNaN(p3 = prompt("Favor de ingresar solamente dígitos. Cuántos sobres de Digimon TCG quieres")));
+
+    let p4 = parseInt(prompt("Cuantos sobres de Final Fantasy TCG quieres"));
+    while (isNaN(p4 = prompt("Favor de ingresar solamente dígitos. Cuántos sobres de Final Fantasy TCG quieres")));
+
+    let p5 = parseInt(prompt("Cuantos sobres de Weiss TCG quieres"));
+    while (isNaN(p5 = prompt("Favor de ingresar solamente dígitos. Cuántos sobres de Weiss TCG quieres")));
+
+    let p6 = parseInt(prompt("Cuantos sobres de One Piece TCG quieres"));
+    while (isNaN(p6 = prompt("Favor de ingresar solamente dígitos. Cuántos sobres de One Piece TCG quieres")));
+    
+    
+
     const t1 = 8 * p1;
     const t2 = 6 * p2;
     const t3 = 5 * p3;
@@ -38,3 +51,4 @@ function orden(){
     } 
 
 
+console.log(inventario)
